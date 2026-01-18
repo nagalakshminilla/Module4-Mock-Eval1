@@ -1,0 +1,28 @@
+{
+  "name": "module4-mock-eval1",
+  "version": "1.0.0",
+  "description": "Module4-Mock-Eval1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagalakshminilla/Module4-Mock-Eval1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nagalakshminilla/Module4-Mock-Eval1/issues"
+  },
+  "homepage": "https://github.com/nagalakshminilla/Module4-Mock-Eval1#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
