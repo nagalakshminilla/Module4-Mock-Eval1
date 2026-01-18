@@ -1,3 +1,15 @@
+const express = require("express");
+const fs = require("fs");
+
+const router = express.Router();
+
+/* helper functions */
+const readDB = () =>
+  JSON.parse(fs.readFileSync("db.json", "utf-8"));
+
+const writeDB = (data) =>
+  fs.writeFileSync("db.json", JSON.stringify(data, null, 2));
+
 router.post("/", (req, res) => {
   const { productId, quantity } = req.body;
   const db = readDB();
@@ -114,3 +126,6 @@ router.get("/total-revenue/:productId", (req, res) => {
 
   res.json({ productId: product.id, totalRevenue });
 });
+
+
+module.exports = router;
